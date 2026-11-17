@@ -1,0 +1,137 @@
+/* Adapted from Canva design DAHbEoDr7zM. Source photography is documented
+   in public/images/SOURCES.md; the original Canva photograph is unavailable. */
+.canva-header {
+  grid-template-columns: 1fr auto auto;
+  gap: 2.2rem;
+  min-height: 76px;
+  padding-inline: 4.1vw;
+  background: #f5f2eb;
+}
+.canva-header .brand-name {
+  font-size: 1.55rem;
+  letter-spacing: -0.035em;
+}
+.canva-header .site-nav { gap: 2.1rem; }
+.canva-header .site-nav a,
+.canva-header .header-selection {
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.canva-header .header-selection { gap: 0.6rem; }
+.canva-header .header-selection > svg { display: none; }
+.canva-header .selection-count {
+  display: grid;
+  min-width: 23px;
+  height: 23px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #793f3b;
+  color: #f5f2eb;
+  font-size: 0.65rem;
+}
+.canva-entry {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: min(850px, calc(100svh - 76px));
+  background: #777574;
+  color: #fffdf8;
+}
+.canva-entry .entry-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  height: 100%;
+  min-height: 0;
+  background: #777574;
+  animation: none;
+}
+.canva-entry .entry-image img {
+  object-position: 70% 44%;
+  filter: saturate(0.55);
+}
+.canva-entry::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgb(22 22 22 / 63%), rgb(22 22 22 / 35%) 52%, rgb(22 22 22 / 5%));
+  content: "";
+  pointer-events: none;
+}
+.canva-entry .entry-copy {
+  justify-content: center;
+  min-height: 650px;
+  padding: 7.5rem 7vw 7rem;
+  background: transparent;
+}
+.canva-entry .entry-plaque {
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+}
+.canva-entry .entry-plaque::before { content: none; }
+.canva-entry .entry-plaque h1 {
+  max-width: 15ch;
+  font-size: clamp(3.6rem, 6.8vw, 6rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  text-wrap: initial;
+}
+.canva-entry .entry-plaque > p {
+  max-width: 41ch;
+  margin: 2rem 0 1.8rem;
+  color: #fffdf8;
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+.canva-entry .primary-link {
+  gap: 1.8rem;
+  min-height: 52px;
+  padding: 0.8rem 1.35rem;
+  border-color: #f5f2eb;
+  background: #f5f2eb;
+  color: #292722;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.canva-entry .primary-link svg { width: 15px; margin: 0; }
+.canva-entry .primary-link:hover { background: #292722; border-color: #292722; color: #fffdf8; }
+.canva-entry .primary-link:focus-visible { outline-color: white; }
+.canva-entry .scroll-cue { display: none; }
+.canva-entry .image-caption {
+  right: 7vw;
+  bottom: 1.2rem;
+  left: 7vw;
+  font-size: 0.64rem;
+  color: #fffdf8;
+}
+@media (max-width: 900px) {
+  .canva-header { gap: 1rem; min-height: 70px; }
+  .canva-header .site-nav { gap: 0; background: #f5f2eb; }
+  .canva-header .site-nav a { padding-block: 1.1rem; }
+  .canva-header .header-selection > svg { display: block; }
+  .canva-header .header-selection > span:not(.selection-count) { display: none; }
+  .canva-entry { min-height: calc(88svh - 70px); }
+  .canva-entry .entry-copy { min-height: 580px; padding-block: 6rem; }
+  .canva-entry .entry-plaque h1 { font-size: clamp(3.4rem, 8.6vw, 5.5rem); }
+}
+@media (max-width: 640px) {
+  .canva-header { padding-inline: 1.2rem; gap: 0.8rem; }
+  .canva-header .brand-name { font-size: 1.3rem; }
+  .canva-entry { min-height: max(640px, calc(92svh - 70px)); }
+  .canva-entry .entry-image img { object-position: 62% center; }
+  .canva-entry::after { background: rgb(22 22 22 / 48%); }
+  .canva-entry .entry-copy { min-height: 0; padding: 5rem 1.5rem; }
+  .canva-entry .entry-plaque h1 { max-width: 11ch; font-size: clamp(3.1rem, 12vw, 4.6rem); line-height: 1.06; }
+  .hero-line-break { display: none; }
+  .canva-entry .entry-plaque > p { max-width: 33ch; margin-block: 1.8rem; font-size: 0.87rem; }
+  .canva-entry .image-caption { right: 1.5rem; left: 1.5rem; font-size: 0.6rem; }
+  .canva-entry .image-caption > span:last-child { display: none; }
+}

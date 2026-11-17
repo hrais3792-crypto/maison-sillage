@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T12:00:12.750Z",
+  "title": "Design System: Maison Sillage",
+  "extensions": {
+    "colorMeta": {
+      "limestone": {
+        "role": "neutral",
+        "displayName": "Warm Limestone",
+        "canonical": "#eee9e0",
+        "tonalRamp": ["oklch(15% 0.008 80)", "oklch(25% 0.01 80)", "oklch(35% 0.012 80)", "oklch(45% 0.012 80)", "oklch(58% 0.012 80)", "oklch(72% 0.012 80)", "oklch(84% 0.01 80)", "oklch(95% 0.008 80)"]
+      },
+      "limestone-light": {
+        "role": "neutral",
+        "displayName": "Pale Limestone",
+        "canonical": "#f5f2eb",
+        "tonalRamp": ["oklch(15% 0.006 80)", "oklch(25% 0.008 80)", "oklch(35% 0.01 80)", "oklch(45% 0.01 80)", "oklch(58% 0.01 80)", "oklch(72% 0.01 80)", "oklch(84% 0.008 80)", "oklch(95% 0.006 80)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#292722",
+        "tonalRamp": ["oklch(15% 0.008 80)", "oklch(25% 0.01 80)", "oklch(35% 0.012 80)", "oklch(45% 0.012 80)", "oklch(58% 0.012 80)", "oklch(72% 0.012 80)", "oklch(84% 0.01 80)", "oklch(95% 0.008 80)"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#555148",
+        "tonalRamp": ["oklch(15% 0.012 80)", "oklch(25% 0.016 80)", "oklch(35% 0.018 80)", "oklch(45% 0.02 80)", "oklch(58% 0.02 80)", "oklch(72% 0.018 80)", "oklch(84% 0.014 80)", "oklch(95% 0.01 80)"]
+      },
+      "iron": {
+        "role": "neutral",
+        "displayName": "Blackened Iron",
+        "canonical": "#37332e",
+        "tonalRamp": ["oklch(15% 0.008 65)", "oklch(25% 0.01 65)", "oklch(35% 0.012 65)", "oklch(45% 0.014 65)", "oklch(58% 0.014 65)", "oklch(72% 0.012 65)", "oklch(84% 0.01 65)", "oklch(95% 0.008 65)"]
+      },
+      "oxblood": {
+        "role": "primary",
+        "displayName": "Deep Oxblood",
+        "canonical": "#793f3b",
+        "tonalRamp": ["oklch(15% 0.02 25)", "oklch(25% 0.04 25)", "oklch(35% 0.06 25)", "oklch(45% 0.075 25)", "oklch(58% 0.08 25)", "oklch(72% 0.065 25)", "oklch(84% 0.04 25)", "oklch(95% 0.015 25)"]
+      },
+      "bronze": {
+        "role": "secondary",
+        "displayName": "Muted Bronze",
+        "canonical": "#927656",
+        "tonalRamp": ["oklch(15% 0.015 66)", "oklch(25% 0.03 66)", "oklch(35% 0.045 66)", "oklch(45% 0.055 66)", "oklch(58% 0.06 66)", "oklch(72% 0.05 66)", "oklch(84% 0.03 66)", "oklch(95% 0.012 66)"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Passage Rule",
+        "canonical": "rgb(41 39 34 / 20%)",
+        "tonalRamp": ["oklch(15% 0.008 80)", "oklch(25% 0.01 80)", "oklch(35% 0.012 80)", "oklch(45% 0.012 80)", "oklch(58% 0.012 80)", "oklch(72% 0.012 80)", "oklch(84% 0.01 80)", "oklch(95% 0.008 80)"]
+      },
+      "iron-text": {
+        "role": "neutral",
+        "displayName": "Iron Linen",
+        "canonical": "#e2d9cb",
+        "tonalRamp": ["oklch(15% 0.012 80)", "oklch(25% 0.02 80)", "oklch(35% 0.025 80)", "oklch(45% 0.03 80)", "oklch(58% 0.03 80)", "oklch(72% 0.025 80)", "oklch(84% 0.018 80)", "oklch(95% 0.01 80)"]
+      },
+      "footer-muted": {
+        "role": "neutral",
+        "displayName": "Footer Linen",
+        "canonical": "#d8cfc0",
+        "tonalRamp": ["oklch(15% 0.012 80)", "oklch(25% 0.02 80)", "oklch(35% 0.025 80)", "oklch(45% 0.03 80)", "oklch(58% 0.03 80)", "oklch(72% 0.025 80)", "oklch(84% 0.018 80)", "oklch(95% 0.01 80)"]
+      },
+      "bronze-light": {
+        "role": "secondary",
+        "displayName": "Pale Bronze",
+        "canonical": "#d4bb9b",
+        "tonalRamp": ["oklch(15% 0.015 76)", "oklch(25% 0.025 76)", "oklch(35% 0.04 76)", "oklch(45% 0.05 76)", "oklch(58% 0.055 76)", "oklch(72% 0.045 76)", "oklch(84% 0.03 76)", "oklch(95% 0.012 76)"]
+      },
+      "entry-image-fallback": {
+        "role": "neutral",
+        "displayName": "Entry Image Fallback",
+        "canonical": "#d3c4b1",
+        "tonalRamp": ["oklch(15% 0.01 74)", "oklch(25% 0.018 74)", "oklch(35% 0.025 74)", "oklch(45% 0.03 74)", "oklch(58% 0.03 74)", "oklch(72% 0.025 74)", "oklch(84% 0.018 74)", "oklch(95% 0.01 74)"]
+      },
+      "collection-image-fallback": {
+        "role": "neutral",
+        "displayName": "Collection Image Fallback",
+        "canonical": "#d4c8b9",
+        "tonalRamp": ["oklch(15% 0.01 80)", "oklch(25% 0.018 80)", "oklch(35% 0.025 80)", "oklch(45% 0.03 80)", "oklch(58% 0.03 80)", "oklch(72% 0.025 80)", "oklch(84% 0.018 80)", "oklch(95% 0.01 80)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Passage Display",
+        "purpose": "Large editorial headings, led by the entry statement."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Collection section title."
+      },
+      "title": {
+        "displayName": "Editorial Title",
+        "purpose": "Collection note and Maison titles."
+      },
+      "body": {
+        "displayName": "Functional Body",
+        "purpose": "Introductory and supporting copy."
+      },
+      "label": {
+        "displayName": "Quiet Label",
+        "purpose": "Navigation, header notes, and compact labels."
+      },
+      "action": {
+        "displayName": "Collection Action",
+        "purpose": "Primary collection anchor label."
+      },
+      "brand-mark": {
+        "displayName": "Brand Initials",
+        "purpose": "Small initials inside the circular brand mark."
+      }
+    },
+    "shadows": [
+      {
+        "name": "image-caption-legibility",
+        "value": "0 1px 12px rgb(0 0 0 / 65%)",
+        "purpose": "Text shadow used only behind the lead image caption."
+      }
+    ],
+    "motion": [
+      {
+        "name": "anchor-scroll",
+        "value": "scroll-behavior: smooth; scroll-padding-top: 5.25rem (4.65rem at <=640px)",
+        "purpose": "Smooth section navigation, overridden to auto for reduced-motion preferences."
+      },
+      {
+        "name": "editorial-image-arrive",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1), scale(1.015) to scale(1)",
+        "purpose": "Subtle lead image arrival; reduced-motion preferences suppress animation."
+      },
+      {
+        "name": "link-and-icon-state",
+        "value": "220ms ease; nav underline 260ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Short color, underline, and directional icon responses; reduced-motion preferences suppress transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1500px",
+        "purpose": "Adjusts the entry image/copy proportions."
+      },
+      {
+        "name": "tablet",
+        "value": "900px",
+        "purpose": "Changes the header to a menu toggle and tightens the two-column entry layout."
+      },
+      {
+        "name": "mobile",
+        "value": "640px",
+        "purpose": "Stacks the entry and collection layouts and adjusts type, insets, and scroll offset."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Site Navigation",
+      "kind": "nav",
+      "refersTo": "site-navigation",
+      "description": "Sticky limestone masthead with quiet centered desktop links and a compact mobile dropdown.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#accueil\"><span class=\"ds-mark\">MS</span><span>Maison Sillage</span></a><nav class=\"ds-nav\" aria-label=\"Navigation principale\"><a href=\"#collection\">La collection</a><a href=\"#maison\">La maison</a></nav><span class=\"ds-header-note\">Vêtements de créateur</span></header>",
+      "css": ".ds-header { position: sticky; top: 0; z-index: 20; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 82px; padding: 0 clamp(1.25rem, 5vw, 5.25rem); border-bottom: 1px solid rgb(41 39 34 / 20%); background: #eee9e0; color: #292722; } .ds-brand { display: inline-flex; align-items: center; gap: .8rem; width: fit-content; color: inherit; font: 1.16rem 'Playfair Display Variable', Georgia, serif; text-decoration: none; } .ds-mark { display: grid; width: 2.45rem; aspect-ratio: 1; place-items: center; border: 1px solid #927656; border-radius: 50%; color: #793f3b; font: .9rem 'Playfair Display Variable', Georgia, serif; } .ds-nav { display: flex; align-items: center; gap: clamp(1.6rem, 3.2vw, 3.6rem); } .ds-nav a, .ds-header-note { color: inherit; font: .76rem 'Outfit', sans-serif; letter-spacing: .045em; } .ds-nav a { padding: .5rem 0; text-decoration: none; } .ds-nav a::after { display: block; width: 100%; height: 1px; margin-top: .3rem; background: currentColor; content: ''; transform: scaleX(0); transform-origin: left; transition: transform 260ms cubic-bezier(.16, 1, .3, 1); } .ds-nav a:hover::after, .ds-nav a:focus-visible::after { transform: scaleX(1); } .ds-nav a:focus-visible, .ds-brand:focus-visible { outline: 2px solid #793f3b; outline-offset: 4px; } .ds-header-note { justify-self: end; color: #555148; } @media (max-width: 900px) { .ds-header { grid-template-columns: 1fr auto; min-height: 74px; } .ds-header-note { display: none; } .ds-nav { position: absolute; top: 100%; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: .5rem clamp(1.25rem, 5vw, 5.25rem) 1rem; border-bottom: 1px solid rgb(41 39 34 / 20%); background: #eee9e0; } .ds-nav.is-open { display: flex; } .ds-nav a { padding: 1rem 0; border-bottom: 1px solid rgb(41 39 34 / 20%); font-size: .9rem; } }"
+    },
+    {
+      "name": "Mobile Menu Toggle",
+      "kind": "custom",
+      "description": "Circular compact menu control; the real page changes its label and expanded state when opened.",
+      "html": "<button class=\"ds-menu-toggle\" type=\"button\" aria-controls=\"primary-navigation\" aria-expanded=\"false\" aria-label=\"Ouvrir le menu\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"><path d=\"M4 7h16M4 12h16M4 17h16\" /></svg></button>",
+      "css": ".ds-menu-toggle { display: grid; width: 2.75rem; aspect-ratio: 1; place-items: center; border: 1px solid rgb(41 39 34 / 20%); border-radius: 50%; background: transparent; color: #292722; cursor: pointer; } .ds-menu-toggle:hover { border-color: #927656; } .ds-menu-toggle:focus-visible { outline: 2px solid #793f3b; outline-offset: 4px; }"
+    },
+    {
+      "name": "Primary Collection Link",
+      "kind": "custom",
+      "refersTo": "collection-link",
+      "description": "Direct anchor into the collection passage, not a purchase action.",
+      "html": "<a class=\"ds-collection-link\" href=\"#collection\"><span>Découvrir la collection</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></a>",
+      "css": ".ds-collection-link { display: inline-flex; width: fit-content; min-height: 3.4rem; align-items: center; justify-content: space-between; gap: 1.35rem; padding: .2rem .05rem .2rem 1.15rem; border: 1px solid #793f3b; border-radius: 0; background: #793f3b; color: #f5f2eb; font: .84rem 'Outfit', sans-serif; text-decoration: none; transition: background-color 220ms ease, color 220ms ease; } .ds-collection-link svg { margin-right: 1rem; } .ds-collection-link:hover { background: transparent; color: #793f3b; } .ds-collection-link:focus-visible { outline: 2px solid #793f3b; outline-offset: 4px; } @media (max-width: 640px) { .ds-collection-link { min-height: 3.15rem; } }"
+    },
+    {
+      "name": "Secondary Passage Link",
+      "kind": "custom",
+      "description": "Unfilled text link with a fine bronze underline and a restrained directional icon.",
+      "html": "<a class=\"ds-text-link\" href=\"#maison\"><span>Découvrir la maison</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></a>",
+      "css": ".ds-text-link { display: inline-flex; width: fit-content; min-height: 2.6rem; align-items: center; justify-content: space-between; gap: 1.35rem; border-bottom: 1px solid #927656; color: #292722; font: .82rem 'Outfit', sans-serif; text-decoration: none; } .ds-text-link svg { color: #793f3b; transition: transform 220ms cubic-bezier(.16, 1, .3, 1); } .ds-text-link:hover svg { transform: translate(3px, -3px); } .ds-text-link:focus-visible { outline: 2px solid #793f3b; outline-offset: 4px; }"
+    },
+    {
+      "name": "Entry Plaque",
+      "kind": "custom",
+      "description": "Open-bottom arched frame around the lead collection statement and its link.",
+      "html": "<div class=\"ds-plaque\"><h1>Vêtements de créateur.</h1><p>Découvrez la collection Maison Sillage au fil de ses passages.</p><a class=\"ds-collection-link\" href=\"#collection\">Découvrir la collection</a></div>",
+      "css": ".ds-plaque { position: relative; isolation: isolate; display: flex; width: min(100%, 33rem); min-height: 28rem; flex-direction: column; justify-content: center; align-items: flex-start; padding: clamp(2rem, 4vw, 4rem) clamp(.4rem, 2.1vw, 2rem); color: #292722; } .ds-plaque::before { position: absolute; z-index: -1; top: 0; right: 1.6rem; bottom: 0; left: 1.6rem; border: 1px solid rgb(146 118 86 / 42%); border-bottom: 0; border-radius: 50% 50% 0 0 / 20% 20% 0 0; content: ''; } .ds-plaque h1 { max-width: 8ch; margin: 0; font: 400 clamp(3.2rem, 5.3vw, 5.4rem)/.98 'Playfair Display Variable', Georgia, serif; letter-spacing: -.035em; } .ds-plaque p { max-width: 31ch; margin: 1.6rem 0 2rem; color: #555148; font: .98rem/1.75 'Outfit', sans-serif; } @media (max-width: 640px) { .ds-plaque { min-height: 0; padding: 2.3rem 1.5rem 2.7rem; } .ds-plaque::before { right: 0; left: 0; border-radius: 50% 50% 0 0 / 17% 17% 0 0; } }"
+    },
+    {
+      "name": "Editorial Figure",
+      "kind": "custom",
+      "description": "Unrounded fashion photograph with a small explicit inspiration caption.",
+      "html": "<figure class=\"ds-editorial-figure\"><img src=\"\" alt=\"Visuel éditorial d’inspiration\" /><figcaption>Visuel éditorial d’inspiration</figcaption></figure>",
+      "css": ".ds-editorial-figure { position: relative; min-width: 0; margin: 0; } .ds-editorial-figure img { display: block; width: 100%; aspect-ratio: .97; background: #d4c8b9; object-fit: cover; } .ds-editorial-figure figcaption { margin-top: .7rem; color: #555148; font: .68rem 'Outfit', sans-serif; letter-spacing: .035em; }"
+    },
+    {
+      "name": "Iron Maison Passage",
+      "kind": "custom",
+      "description": "Closing Maison section with a thin top rule, large editorial title, and pale copy.",
+      "html": "<section class=\"ds-maison\"><div class=\"ds-maison-frame\"><h2>Maison Sillage</h2><p>Une vitrine pour présenter les vêtements de créateur et accueillir la collection.</p><a class=\"ds-light-link\" href=\"#accueil\">Revenir à l’entrée <svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></a></div></section>",
+      "css": ".ds-maison { padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 8vw, 8rem); background: #37332e; color: #f5f2eb; } .ds-maison-frame { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .75fr); align-items: end; gap: 2rem 5vw; padding-top: 2rem; border-top: 1px solid rgb(238 233 224 / 30%); } .ds-maison-frame h2 { margin: 0; font: 400 clamp(3.4rem, 8vw, 7.5rem)/.98 'Playfair Display Variable', Georgia, serif; letter-spacing: -.045em; } .ds-maison-frame p { max-width: 40ch; margin: 0 0 .4rem; color: #e2d9cb; font: 1rem/1.75 'Outfit', sans-serif; } .ds-light-link { grid-column: 2; display: inline-flex; width: fit-content; min-height: 2.6rem; align-items: center; gap: 1.35rem; border-bottom: 1px solid #927656; color: #f5f2eb; font: .82rem 'Outfit', sans-serif; text-decoration: none; } .ds-light-link svg { color: #d4bb9b; } .ds-light-link:focus-visible { outline: 2px solid #d4bb9b; outline-offset: 4px; } @media (max-width: 640px) { .ds-maison-frame { grid-template-columns: 1fr; gap: 1.4rem; } .ds-maison-frame .ds-light-link { grid-column: 1; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le passage des silhouettes",
+    "overview": "Maison Sillage's homepage is an editorial sequence of thresholds: a fashion image and collection invitation, a two-image collection passage, then a quiet Maison sign-off. Warm limestone, a dark iron section, oxblood action, and restrained bronze framing give the page its architectural character. The desktop and mobile captures confirm this hierarchy, with the lead image paired with the collection plaque on wider screens and placed above it on narrow screens.\n\nThe current implementation uses real font files for Outfit and Playfair Display Variable, but its three remote Unsplash photographs are explicitly labeled as inspiration, not Maison Sillage product imagery. No catalog, prices, availability, provenance, or craftsmanship story is represented. The brief mentions textured glass, but no glass surface or texture is implemented in the inspected CSS or captures; this document records the shipped limestone-and-iron treatment instead.",
+    "keyCharacteristics": [
+      "A warm, restrained palette with oxblood reserved for the main collection action.",
+      "Playfair Display headlines paired with Outfit navigation, labels, and body copy.",
+      "Editorial image framing and a single arched plaque establish passage-like architecture.",
+      "Responsive layouts preserve the image-to-copy sequence and direct collection navigation."
+    ],
+    "rules": [
+      {
+        "name": "The Passage-Link Rule",
+        "body": "Keep the collection invitation a clear, directly usable link; the arch is framing, not a replacement for the action.",
+        "section": "components"
+      },
+      {
+        "name": "The Editorial Pairing Rule",
+        "body": "Keep Playfair Display Variable for large editorial titles and Outfit for functional navigation, captions, and prose.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do retain the limestone / pale limestone / iron surfaces and the current oxblood action contrast.",
+      "Do use the collection anchor as a clear passage into the collection section.",
+      "Do keep the mobile sequence image first, then the entry plaque and collection content.",
+      "Do preserve visible focus outlines and reduced-motion behavior.",
+      "Do identify the current photographs and collection status as inspiration or unfinished where shown."
+    ],
+    "donts": [
+      "Don't present inspiration imagery as actual Maison Sillage products.",
+      "Don't invent product names or details, prices, availability, provenance, craft claims, testimonials, or commerce flows.",
+      "Don't document textured glass, shadow cards, rounded product cards, or other treatments as shipped; they are not present in the inspected implementation.",
+      "Don't turn the styled collection anchor into an implied purchase or checkout action."
+    ]
+  }
+}

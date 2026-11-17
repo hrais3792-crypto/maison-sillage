@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T00:00:00Z",
+  "title": "Design System: Maison Sillage",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Ink" },
+      "cream": { "role": "neutral", "displayName": "Warm Ivory" },
+      "stone": { "role": "neutral", "displayName": "Stone" },
+      "bronze": { "role": "primary", "displayName": "Subtle Champagne" },
+      "line": { "role": "neutral", "displayName": "Fine Divider" },
+      "muted": { "role": "neutral", "displayName": "Muted Text" },
+      "light-muted": { "role": "neutral", "displayName": "Light Muted Text" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Editorial Display", "purpose": "Full-screen hero headline; responsive overrides remain in luxury.css." },
+      "headline": { "displayName": "Section Headline", "purpose": "Large editorial section openings." },
+      "title": { "displayName": "Silhouette Title", "purpose": "Collection card titles." },
+      "body": { "displayName": "Editorial Copy", "purpose": "Compact supporting text with generous leading." },
+      "label": { "displayName": "Interface Label", "purpose": "Tracked navigation and actions." }
+    },
+    "motion": [
+      { "name": "--ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Existing CSS easing for editorial movement." },
+      { "name": "dialog-enter", "value": "320ms var(--ease)", "purpose": "Opacity and 18px vertical entrance; disabled for reduced motion." },
+      { "name": "heart-confirm", "value": "280ms var(--ease)", "purpose": "Brief saved-state feedback; disabled for reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "1000px" },
+      { "name": "mobile-navigation", "value": "800px" },
+      { "name": "mobile-layout", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Save Inspiration",
+      "kind": "button",
+      "refersTo": "quick-save",
+      "description": "Square primary action for the shared favorites state.",
+      "html": "<button class=\"ds-save\" type=\"button\" aria-pressed=\"false\">Ajouter à mon carnet</button>",
+      "css": ".ds-save{min-height:52px;padding:15px 20px;background:var(--ink);color:var(--cream);border:1px solid var(--ink);border-radius:0;font:400 11px var(--sans);cursor:pointer}.ds-save:hover{background:var(--cream);color:var(--ink)}.ds-save[aria-pressed=true]{background:var(--cream);color:var(--ink)}.ds-save:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}"
+    },
+    {
+      "name": "Quick-view Action",
+      "kind": "button",
+      "refersTo": "quick-view",
+      "description": "Ivory photographic overlay action; remains available on touch.",
+      "html": "<button class=\"ds-quick\" type=\"button\" aria-haspopup=\"dialog\">Découvrir la silhouette</button>",
+      "css": ".ds-quick{min-height:46px;padding:14px;background:var(--cream);color:var(--ink);border:0;border-radius:0;font:500 10px/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.ds-quick:hover{outline:1px solid var(--ink);outline-offset:-4px}.ds-quick:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}"
+    },
+    {
+      "name": "Favorite",
+      "kind": "button",
+      "refersTo": "favorite",
+      "description": "Circular saved-inspiration control; ink fill indicates selection.",
+      "html": "<button class=\"ds-favorite\" type=\"button\" aria-label=\"Ajouter à ma sélection\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"/></svg></button>",
+      "css": ".ds-favorite{display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:rgb(247 245 239 / 95%);color:var(--ink);cursor:pointer;transition:transform .2s}.ds-favorite svg{width:20px;height:20px}.ds-favorite:hover{transform:scale(1.07)}.ds-favorite[aria-pressed=true]{background:var(--ink);color:var(--cream)}.ds-favorite[aria-pressed=true] svg{fill:currentColor}.ds-favorite:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-favorite{transition:none}.ds-favorite:hover{transform:none}}"
+    },
+    {
+      "name": "Category Filter",
+      "kind": "chip",
+      "description": "Typographic category tab with an underlined pressed state.",
+      "html": "<button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">Tout</button>",
+      "css": ".ds-filter{min-height:45px;padding:12px 0 16px;border:0;border-bottom:1px solid transparent;background:transparent;color:var(--ink);font:500 10px var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.ds-filter[aria-pressed=true],.ds-filter:hover{border-bottom-color:var(--ink)}.ds-filter:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}"
+    },
+    {
+      "name": "Editorial Navigation",
+      "kind": "nav",
+      "description": "Tracked, quiet interface links with a left-origin underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation de démonstration\"><a href=\"#collection\">Collection</a><a href=\"#lookbook\">Lookbook</a></nav>",
+      "css": ".ds-nav{display:flex;gap:32px;background:var(--cream);color:var(--ink);padding:20px}.ds-nav a{position:relative;color:inherit;text-decoration:none;font:500 10px var(--sans);letter-spacing:.13em;text-transform:uppercase}.ds-nav a:after{content:'';position:absolute;bottom:-6px;left:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 280ms var(--ease)}.ds-nav a:hover:after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-nav a:after{transition:none}}"
+    },
+    {
+      "name": "Inspiration Caption",
+      "kind": "card",
+      "description": "Flat serif caption beneath photographic collection cards; no commercial data.",
+      "html": "<article class=\"ds-caption\"><p>Inspiration visuelle</p><h3>Une silhouette à découvrir</h3></article>",
+      "css": ".ds-caption{padding-top:17px;background:var(--cream);color:var(--ink)}.ds-caption p{margin:0;color:var(--muted);font:400 10px/1.5 var(--sans);letter-spacing:.05em}.ds-caption h3{margin:7px 0 0;font:400 29px/1.1 var(--serif);letter-spacing:-.015em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Fashion Notebook",
+    "overview": "An immersive photographic invitation, with expressive serif headlines, disciplined interface typography and generous breathing room. Warm ivory pages alternate with an ink-dark lookbook; subtle champagne details support the photographs. The active HTML storefront is an inspiration gallery, with genuine discovery, detail zoom and a shared saved-selection notebook.",
+    "keyCharacteristics": ["Full-screen photography", "Asymmetric editorial pacing", "Flat ivory and ink surfaces", "Shared saved-inspiration state", "Reduced-motion support"],
+    "rules": [
+      { "name": "Rare Champagne", "body": "Reserve bronze for focus and small accents; photography and ink/ivory establish the hierarchy.", "section": "colors" },
+      { "name": "Editorial Type", "body": "Use Cormorant Garamond for expressive headings and locally hosted Inter for interface copy.", "section": "typography" },
+      { "name": "Flat Surfaces", "body": "Create depth through photography, tone, fine rules and modal backdrops rather than decorative card shadows.", "section": "elevation" }
+    ],
+    "dos": ["Do preserve French copy and inspiration disclosures.", "Do share favorites across cards, quick-view, drawer and printable notebook.", "Do preserve keyboard focus and touch access."],
+    "donts": ["Don't invent inventory, product facts, prices or payment flows.", "Don't apply the archived React homepage's visual system to the active route.", "Don't require hover or animation to use controls."]
+  }
+}

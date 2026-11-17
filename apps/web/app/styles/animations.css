@@ -1,0 +1,11 @@
+/* Prevent CSS smooth scrolling from competing with Lenis' ticker. */
+html.lenis {
+  scroll-behavior: auto;
+}
+
+/* Keep this policy independent of the current route's stylesheet. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
